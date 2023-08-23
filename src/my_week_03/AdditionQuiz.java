@@ -1,3 +1,5 @@
+package my_week_03;
+
 import java.util.Scanner;
 
 
@@ -7,7 +9,7 @@ public class AdditionQuiz {
 		System.out.println("We will ask you same math question "+
 			"then you will anwer them.");
 			int firstNumber=(int)(System.currentTimeMillis() % 10);
-			int secondNumber=(int)(System.currentTimeMillis() % 100);
+			int secondNumber=(int)(System.currentTimeMillis()/7 % 10);
 
 		System.out.print("What is the result of this question ;\n\n\n"
 			+firstNumber+" + "+secondNumber+" = ");
