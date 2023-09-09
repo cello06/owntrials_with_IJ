@@ -12,7 +12,7 @@ public class MathPow {
 
         int number = input.nextInt();
 
-        System.out.print("Pow Number : ");
+        System.out.print("Pow  Number : ");
 
         int powNumber = input.nextInt();
 
