@@ -9,7 +9,11 @@ public class CodingBat {
         int differanceAWithTen = Math.abs(10-a);
         int differanceBWithTen = Math.abs(10-b);
 
-        return (differanceAWithTen>differanceBWithTen)?b:a;
+        if(differanceAWithTen-differanceBWithTen==0){
+            return 0;
+        }else{
+            return (differanceAWithTen>differanceBWithTen)?b:a;
+        }
     }
 
 }
