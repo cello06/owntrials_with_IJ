@@ -8,15 +8,21 @@ public class PrimeNumberMethod {
         System.out.print("Enter the number of prime number that" +
                 " you want to see! --> ");
         int numberOfPrime = input.nextInt();
-        printPrimeNumber(numberOfPrime);
+        System.out.print("Now enter how many number that you want to see per line : ");
+        int numberPerLine = input.nextInt();
+        printPrimeNumber(numberOfPrime,numberPerLine);
     }
 
-    public static void printPrimeNumber(int numberOfPrime) {
+    public static void printPrimeNumber(int numberOfPrime,int numberPerLine) {
         int count = 0;
         int number=2;
         while (count < numberOfPrime) {
             if(isPrime(number)){
-                System.out.print((count%10==0)?"\n"+number+" ":number+" ");
+                if(count%numberPerLine==0){
+                    System.out.printf("\n%-5d",number);
+                }else{
+                    System.out.printf("%-5d",number);
+                }
                 count++;
             }
            number++;
