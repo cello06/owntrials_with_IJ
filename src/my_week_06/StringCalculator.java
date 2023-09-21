@@ -80,7 +80,7 @@ public class StringCalculator {
         }
 
         newNumber = sumOfWholeParts + "," + sumOfFractionalParts;
-        System.out.printf("The sum of %s and  \n\n%s   is : %s", number1, number2, newNumber);
+        System.out.printf("The sum of %s and  %s  \n ---->  : %s", number1, number2, newNumber);
 
     }
 
