@@ -13,6 +13,7 @@ public class Question_06_21 {
         System.out.println(convertedNumber);
     }
 
+
     public static String convertToInternationalNumber(String strToConvert) {
         String converted = "";
         for (int i = 0; i < strToConvert.length(); i++) {
