@@ -8,9 +8,13 @@ public class Question_06_21 {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a string : ");
         String strOfUser = input.nextLine().toUpperCase(Locale.ROOT);
-
-        String convertedNumber = convertToInternationalNumber(strOfUser);
-        System.out.println(convertedNumber);
+        boolean isNumberValid = isValid(strOfUser);
+        if (isNumberValid) {
+            String convertedNumber = convertToInternationalNumber(strOfUser);
+            System.out.println(convertedNumber);
+        } else {
+            System.out.println("Invalid input !");
+        }
     }
 
 
@@ -46,5 +50,16 @@ public class Question_06_21 {
             number = 2;
         }
         return number;
+    }
+
+    public static boolean isValid(String strOfUser) {
+        for (int i = 0; i < strOfUser.length(); i++) {
+            if (!(Character.isLetter(strOfUser.charAt(i))
+                    || Character.isDigit(strOfUser.charAt(i))
+                    || strOfUser.charAt(i) == '-')) {
+                return false;
+            }
+        }
+        return true;
     }
 }
