@@ -1,21 +1,21 @@
 package my_week_07;
 
+import com.sun.security.jgss.GSSUtil;
+
+import java.util.Scanner;
+
 public class Try {
     public static void main(String[] args) {
-    int [] numbers = {1,2,3,4,5,6};
-    int [] reversedArray = reverseArray(numbers);
-        for (int a :
-                reversedArray) {
-            System.out.println(a);
-        }
+        double sumOfNumbers = sum(1, 2.5,5,5, 3, 4, 5, 6, 7, 8, 9);
+        System.out.println(sumOfNumbers);
     }
-    public static int[] reverseArray(int [] array){
-        int lastIndexOfArray = array.length-1;
-        int [] reversedArray = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
-            reversedArray[i] = array[lastIndexOfArray];
-            lastIndexOfArray--;
+
+    public static double sum(double...numbers){
+        double sumOfNumbers = 0;
+        for(double number : numbers){
+            sumOfNumbers += number;
         }
-        return reversedArray;
+        return sumOfNumbers;
     }
+
 }
