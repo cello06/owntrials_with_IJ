@@ -2,20 +2,20 @@ package my_week_07;
 
 import com.sun.security.jgss.GSSUtil;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Try {
     public static void main(String[] args) {
-        double sumOfNumbers = sum(1, 2.5,5,5, 3, 4, 5, 6, 7, 8, 9);
-        System.out.println(sumOfNumbers);
+        int[] list1 = {2, 4, 7, 10};
+        java.util.Arrays.fill(list1, 7);
+        System.out.println(java.util.Arrays.toString(list1));
+        int[] list2 = {2, 4, 7, 10};
+        java.util.Arrays.fill(list2, 7);
+
+        System.out.println(java.util.Arrays.toString(list2));
+        System.out.print(java.util.Arrays.equals(list1, list2));
+
     }
 
-    public static double sum(double...numbers){
-        double sumOfNumbers = 0;
-        for(double number : numbers){
-            sumOfNumbers += number;
-        }
-        return sumOfNumbers;
-    }
 
 }

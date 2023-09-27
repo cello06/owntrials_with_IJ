@@ -3,18 +3,18 @@ package my_week_07;
 public class SelectionSort {
     public static double[] selectionSort(double [] list) {
         for (int i = 0; i <list.length ; i++) {
-            double currentMin = list[i];
-            int currentMinIndex = i;
+            double currentMax = list[i];
+            int currentMaxIndex = i;
 
             for (int j = i+1; j <list.length ; j++) {
-                if(currentMin > list[j]){
-                    currentMin = list[j];
-                    currentMinIndex = j;
+                if(currentMax < list[j]){
+                    currentMax = list[j];
+                    currentMaxIndex = j;
                 }
             }
-            if(currentMinIndex != i){
-                list[currentMinIndex] = list[i];
-                list[i] = currentMin;
+            if(currentMaxIndex != i){
+                list[currentMaxIndex] = list[i];
+                list[i] = currentMax;
             }
         }
 
