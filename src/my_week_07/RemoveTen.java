@@ -23,9 +23,9 @@ public class RemoveTen {
     public static int[] removeTens(int[] list) {
         int[] result = new int[list.length];
         int countIndex = 0;
-        for (int i = 0; i < list.length; i++) {
-            if (list[i] != 10) {
-                result[countIndex] = list[i];
+        for (int j : list) {
+            if (j != 10) {
+                result[countIndex] = j;
                 countIndex++;
             }
         }
