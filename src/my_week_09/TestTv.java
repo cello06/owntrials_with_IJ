@@ -7,7 +7,7 @@ public class TestTv {
         television1.setChannel(8);
         television1.setVolumeLevel(50);
         television1.channelUp();
-        //String a=null;
+
         Tv television2 = new Tv("Television2");
         television2.setOn(false);
         television2.setChannel(5);

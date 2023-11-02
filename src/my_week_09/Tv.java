@@ -1,13 +1,14 @@
 package my_week_09;
 
 public class Tv {
-    public Tv(String name){
-        setName(name);
-    }
+
     private String name;
     private int channel;
     private int volumeLevel;
     private boolean on;
+    public Tv(String name){
+        setName(name);
+    }
     public void setName(String name){
         this.name = name;
     }
