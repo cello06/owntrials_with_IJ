@@ -1,4 +1,4 @@
-package my_week_10;
+package my_week_10.classes;
 
 import java.util.Date;
 

@@ -1,4 +1,6 @@
-package my_week_10;
+package my_week_10.test;
+
+import my_week_10.classes.Loan;
 
 import java.util.Scanner;
 
