@@ -4,11 +4,11 @@ public class CircleWithException {
     private double radius;
     private static int numberOfObject;
 
-    public CircleWithException() {
+    public CircleWithException() throws InvalidRadiusException{
         this(1.0);
     }
 
-    public CircleWithException(double radius) {
+    public CircleWithException(double radius) throws InvalidRadiusException {
         setRadius(radius);
         numberOfObject++;
     }
@@ -17,11 +17,11 @@ public class CircleWithException {
         return this.radius;
     }
 
-    public void setRadius(double radius) throws IllegalArgumentException {
+    public void setRadius(double radius) throws InvalidRadiusException {
         if (radius >= 0) {
             this.radius = radius;
         } else {
-            throw new IllegalArgumentException("Radius can not be negative");
+            throw new InvalidRadiusException(radius);
         }
     }
 
