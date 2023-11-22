@@ -4,7 +4,7 @@ public class CircleWithException {
     private double radius;
     private static int numberOfObject;
 
-    public CircleWithException() throws InvalidRadiusException{
+    public CircleWithException() throws InvalidRadiusException {
         this(1.0);
     }
 
@@ -34,3 +34,4 @@ public class CircleWithException {
     }
 
 }
+

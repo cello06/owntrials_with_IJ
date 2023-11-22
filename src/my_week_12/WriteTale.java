@@ -5,9 +5,10 @@ import java.io.PrintWriter;
 
 public class WriteTale {
     public static void main(String[] args) throws Exception {
+        System.out.println(System.getProperty("user.dir"));
         File tale = new File(System.getProperty("user.dir") +
                 "/src/my_week_12/ATaleOfTwoCities");
-
+        System.out.println(tale.getAbsolutePath());
         PrintWriter output = new PrintWriter(tale);
         output.println("It was the best of times, it was the worst of times,"
                 +" it was the age of wisdom");

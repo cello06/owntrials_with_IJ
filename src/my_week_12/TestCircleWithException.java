@@ -6,10 +6,11 @@ public class TestCircleWithException {
             CircleWithException circle1 = new CircleWithException(8);
             CircleWithException circle2 = new CircleWithException(5);
             CircleWithException circle3 = new CircleWithException(-8);
-        }catch (InvalidRadiusException e){
+        } catch (InvalidRadiusException e) {
             System.out.println(e.getMessage());
         }
         System.out.println("Number of objects created : " +
                 CircleWithException.getNumberOfObject());
     }
 }
+
