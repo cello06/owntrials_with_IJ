@@ -50,23 +50,13 @@ public class Question_13_16 {
 
     public static void calculate
             (FixedRational number1, FixedRational number2, String numerator) {
-        String result = "";
-        switch (numerator) {
-            case "+":
-                result = number1.add(number2).toString();
-                break;
-            case "-":
-                result = number1.subtract(number2).toString();
-                break;
-            case "*":
-                result = number1.multiply(number2).toString();
-                break;
-            case "/":
-                result = number1.divide(number2).toString();
-                break;
-            default:
-                throw new RuntimeException("Wrong numerator for calculation !");
-        }
+        String result = switch (numerator) {
+            case "+" -> number1.add(number2).toString();
+            case "-" -> number1.subtract(number2).toString();
+            case "*" -> number1.multiply(number2).toString();
+            case "/" -> number1.divide(number2).toString();
+            default -> throw new RuntimeException("Wrong numerator for calculation !");
+        };
         System.out.println(number1 + " " + numerator + " " + number2 + " = " + result);
     }
 }
