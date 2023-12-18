@@ -1,6 +1,4 @@
-package week_13;
-
-import java.util.ArrayList;
+package my_week_13;
 
 public class Inar {
     public static void main(String[] args) {
